@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+.barra-navegacion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.barra-navegacion ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.barra-navegacion a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.barra-navegacion a.activo,
+.barra-navegacion a:hover {
+  color: #7b3f00;
+}
+
+.navegacion-derecha {
+  display: flex;
+  align-items: center; 
+  gap: 30px; 
+}
+
+.icono-carrito {
+  cursor: pointer;
+}
+
+.icono-carrito img {
+  height: 24px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background: #f7f3ef;
+}
+
+.linea-cafe{
+    display: block; 
+    margin-top: 5px;
+    margin-left: 120px; 
+    color: #595959;
+}
+
+.texto-principal h1 {
+  font-size: 40px;
+  line-height: 1.3;
+  margin-left: 140px;
+}
+#texto-break {
+  display: inline-block;
+  white-space: nowrap; 
+}
+
+#texto-cafe {
+  margin-left: -150px; 
+  text-align: right; 
+  font-weight: 800;
+  color: #000;
+}
+
+.texto-principal span {
+  font-weight: 800;
+  color: #000;
+}
+
+.imagen-principal {
+  position: relative; 
+}
+
+.imagen-principal img {
+  width: 600px;
+  border: none;
+  position: relative; 
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+}
+
+.imagen-principal::before {
+  content: "COFFEE\A COFFEE\A COFFEE\A COFFEE"; 
+  white-space: pre; 
+  position: absolute; 
+  top: 50%; 
+  left: 0; 
+  transform: translateY(-50%) rotate(-8deg); 
+  transform-origin: left center; 
+  font-size: 120px; 
+  font-weight: 900; 
+  color: rgba(0, 0, 0, 0.15); 
+  line-height: 0.8; 
+  text-align: left; 
+  z-index: 1; 
+  pointer-events: none; 
+  width: 100%; 
+  height: 100%;
+}
+
+.categorias {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.categorias ul {
+  display: inline-flex;
+  gap: 40px;
+  list-style: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.categorias li {
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.categorias li.activo,
+.categorias li:hover {
+  color: #7b3f00;
+}
+
+.producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background-color: #fff;
+}
+
+.imagen-producto img {
+  width: 350px;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.info-producto {
+  width: 50%;
+}
+
+.info-producto h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #7b3f00;
+  margin-bottom: 10px;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.cantidad button {
+  background: #7b3f00;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.boton-agregar {
+  background-color: #7b3f00;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.boton-agregar:hover {
+  background-color: #5a2d00;
+}
+
+.proceso {
+  background-color: #f7f3ef;
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.proceso h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.cajas-proceso {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cajas-proceso .caja {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.caja img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.populares {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.populares h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.lista-sabores {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 30px;
+}
+
+.sabor {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 230px;
+  padding: 20px;
+}
+
+.sabor img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.sabor h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.suscribirse {
+    background-color: #f7f3ef;
+    padding: 80px 20px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+.suscribirse-texto {
+    flex: 1; 
+    min-width: 300px; 
+    padding-right: 20px; 
+}
+
+.suscribirse-imagen {
+    flex: 0 0 auto; 
+    position: relative;
+}
+
+.suscribirse-imagen img {
+    width: 450px; 
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+.suscribirse form {
+    margin-top: 20px;
+}
+
+.suscribirse input {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.suscribirse button {
+    padding: 12px 25px;
+    background: #7b3f00;
+}
+
+.pie-pagina {
+    background: #2b1b0f;
+    color: #fff;
+    padding: 60px 80px 20px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px; 
+}
+
+.pie-pagina h3,
+.pie-contacto h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #f0f0f0;
+}
+
+.pie-enlaces ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pie-enlaces li {
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+.pie-enlaces li:hover {
+    text-decoration: underline;
+}
+
+.pie-contacto p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+.icono-contacto {
+    height: 1em;
+    width: auto; 
+    vertical-align: middle; 
+    margin-right: 8px; 
+}
+
+.derechos-autor {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    background: #2b1b0f;
+    padding-bottom: 20px;
+}
